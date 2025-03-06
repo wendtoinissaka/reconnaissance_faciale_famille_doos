@@ -15,8 +15,10 @@ body {
 }
 
 #image-preview {
-    max-width: 100%;
-    height: auto;
+    max-width: 60%;
+    height: 60%;
+    text-align: center;
+    /* height: auto; */
     display: none;
     margin-top: 20px;
 }
@@ -41,4 +43,24 @@ body {
     font-size: 14px;
     margin-top: 10px;
     font-weight: bold;
+}
+
+/* Loader */
+#loader {
+    margin: 20px auto;
+    border: 5px solid #ccc;
+    border-top: 5px solid blue;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.hidden {
+    display: none;
 }

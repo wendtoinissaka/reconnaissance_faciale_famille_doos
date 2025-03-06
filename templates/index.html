@@ -16,16 +16,18 @@
     <div class="form-group">
         <label for="file-input" class="form-label">Choisir une photo :</label>
         <input type="file" class="form-control" id="file-input" accept="image/*">
-        <!-- Message pour indiquer le statut du chargement de l'image -->
         <div id="image-status"></div>
     </div>
 
     <!-- Aperçu de l'image choisie -->
-    <img id="image-preview" alt="Aperçu de l'image" />
+    <img id="image-preview" alt="Aperçu de l'image" class="img-fluid rounded" />
+
+    <!-- Loader -->
+    <div id="loader" class="hidden"></div>
 
     <!-- Bouton pour tester la reconnaissance faciale -->
     <div class="button-container">
-        <button id="test-button" class="btn btn-primary" style="width: 48%;" disabled>Tester</button>
+        <button id="test-button" class="btn btn-primary mt-3" style="width: 48%;" disabled>Tester</button>
     </div>
 
     <!-- Résultat de la reconnaissance -->
